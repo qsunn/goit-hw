@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>WebStudio</title>
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                     <a href="./index.html">Студия</a>
                 </li>
                 <li class="header__menu--item">
-                    <a href="./portfolio.html">Портфолио</a>
+                    <a class="current" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="header__menu--item">
                     <a href="#address">Контакты</a>
@@ -40,10 +40,10 @@
     <div class="line"></div>
     <main>
         <section class="portfolio">
-            <h2 class="portfolio__title">Товары</h2>
+            <h1 class="portfolio__title">Товары</h1>
             <ul class="portfolio__btns">
                 <li class="portfolio__btns--item">
-                    <button type="button">Все</button>
+                    <button class="current" type="button">Все</button>
                 </li>
                 <li class="portfolio__btns--item">
                     <button type="button">Веб-сайты</button>
@@ -60,49 +60,67 @@
             </ul>
             <ul class="portfolio__cards">
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Технокряк</h4>
-                    <p class="portfolio__cards--item__type">Веб-сайт</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Технокряк</h2>
+                        <p class="portfolio__cards--item__type">Веб-сайт</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-1.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Постер New Orlean vs Golden Star</h4>
-                    <p class="portfolio__cards--item__type">Дизайн</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-1.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Постер New Orlean vs Golden Star</h2>
+                        <p class="portfolio__cards--item__type">Дизайн</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-2.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Ресторан Seafood</h4>
-                    <p class="portfolio__cards--item__type">Приложение</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-2.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Ресторан Seafood</h2>
+                        <p class="portfolio__cards--item__type">Приложение</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-3.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Проект Prime</h4>
-                    <p class="portfolio__cards--item__type">Маркетинг</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-3.jpg" alt="photo" width="370">
+                        <h4 class="portfolio__cards--item__name">Проект Prime</h4>
+                        <p class="portfolio__cards--item__type">Маркетинг</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-4.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Проект Boxes</h4>
-                    <p class="portfolio__cards--item__type">Приложение</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-4.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Проект Boxes</h2>
+                        <p class="portfolio__cards--item__type">Приложение</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-5.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Inspiration has no Borders</h4>
-                    <p class="portfolio__cards--item__type">Веб-сайт</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-5.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Inspiration has no Borders</h2>
+                        <p class="portfolio__cards--item__type">Веб-сайт</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-6.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Издание Limited Edition</h4>
-                    <p class="portfolio__cards--item__type">Дизайн</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-6.jpg" alt="photo" width="370">
+                        <h4 class="portfolio__cards--item__name">Издание Limited Edition</h4>
+                        <p class="portfolio__cards--item__type">Дизайн</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-7.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Проект LAB</h4>
-                    <p class="portfolio__cards--item__type">Маркетинг</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-7.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Проект LAB</h2>
+                        <p class="portfolio__cards--item__type">Маркетинг</p>
+                    </a>
                 </li>
                 <li class="portfolio__cards--item">
-                    <img class="portfolio__cards--item__photo" src="./img/portfolio/img-8.jpg" alt="photo" width="370">
-                    <h4 class="portfolio__cards--item__name">Growing Business</h4>
-                    <p class="portfolio__cards--item__type">Приложение</p>
+                    <a href="#">
+                        <img class="portfolio__cards--item__photo" src="./img/portfolio/img-8.jpg" alt="photo" width="370">
+                        <h2 class="portfolio__cards--item__name">Growing Business</h2>
+                        <p class="portfolio__cards--item__type">Приложение</p>
+                    </a>
                 </li>
             </ul>
         </section>
