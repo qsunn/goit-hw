@@ -529,24 +529,6 @@ address {
     transition: top .25s cubic-bezier(0.4, 0, 0.2, 1), opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes appear {
-    0% {
-        transform: translate(100vw, 100vh);
-    }
-    100% {
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes disappear {
-    0% {
-        transform: translate(0px, 0px);
-    }
-    100% {
-        transform: translate(100vw, 100vh);
-    }
-}
-
 .is-hidden {
     top: 100%;
     visibility: none;
