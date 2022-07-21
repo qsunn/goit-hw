@@ -1,0 +1,33 @@
+.clients {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--item {
+            border-radius: 4px;
+            padding: 16px 32px;
+            margin-right: 30px;
+            border: 1px solid $light-grey;
+            color: $light-grey;
+            transition: color .25s cubic-bezier(0.4, 0, 0.2, 1), border .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                border: 1px solid $blue;
+                color: $blue;
+            }
+        }
+    }
+}
