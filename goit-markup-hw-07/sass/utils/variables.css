@@ -1,0 +1,16 @@
+@-webkit-keyframes slide {
+  0% {
+    transform: translate(0px, 294px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translate(0px, 294px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}/*# sourceMappingURL=variables.css.map */
