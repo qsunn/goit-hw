@@ -129,7 +129,7 @@
     }
 }
 
-@media(max-width: 1201px) {
+@media(max-width: 1199px) {
     .footer {
         &__flex {
             display: grid;
@@ -165,7 +165,7 @@
     }
 }
 
-@media(max-width: 769px) {
+@media(max-width: 767px) {
     .footer {
         &__flex {
             grid-template-columns: 1fr;

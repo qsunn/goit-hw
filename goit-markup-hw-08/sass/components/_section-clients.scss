@@ -32,7 +32,7 @@
     }
 }
 
-@media(max-width: 1201px) {
+@media(max-width: 1199px) {
     .clients {
         &__logos {
             display: grid;
@@ -46,7 +46,7 @@
     }
 }
 
-@media(max-width: 769px) {
+@media(max-width: 767px) {
     .clients {
         &__logos {
             grid-template-columns: 1fr 1fr;

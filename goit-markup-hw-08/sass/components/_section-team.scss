@@ -61,7 +61,7 @@
     }
 }
 
-@media(max-width: 1201px) {
+@media(max-width: 1199px) {
     .team {
         &__cards {
             display: grid;
@@ -87,7 +87,7 @@
     }
 }
 
-@media(max-width: 481px) {
+@media(max-width: 479px) {
     .team {
         &__cards {
             grid-template-columns: 1fr;

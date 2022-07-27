@@ -96,7 +96,7 @@
     }
 }
 
-@media(max-width: 769px) {
+@media(max-width: 767px) {
     .portfolio {
         &__btns {
             justify-content: start;
@@ -130,7 +130,7 @@
     }
 }
 
-@media(max-width: 481px) {
+@media(max-width: 479px) {
     .portfolio {
         &__cards {
             grid-template-columns: 1fr;
