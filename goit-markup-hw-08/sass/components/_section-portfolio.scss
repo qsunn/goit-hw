@@ -1,0 +1,125 @@
+.portfolio {
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        &--item {
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            & button {
+                padding: 6px 22px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.625;
+                background: $light-bg;
+                border-radius: 4px;
+                transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1), color .25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow .25s cubic-bezier(0.4, 0, 0.2, 1);
+
+                &:hover,
+                &:focus {
+                    color: $white;
+                    background: $blue;
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                }
+            }
+
+            & .current {
+                color: $white;
+                background: $blue;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        &--item {
+            position: relative;
+            overflow: hidden;
+
+            &__text {
+                position: relative;
+                z-index: 1;
+                padding: 20px 24px;
+                margin-top: -4px;
+                border: 1px solid #EEEEEE;
+                border-top: none;
+                background: $white;
+            }
+
+            &__name {
+                font-size: 18px;
+                line-height: 2;
+                letter-spacing: 0.06em;
+                margin-bottom: 4px;
+            }
+
+            &__type {
+                font-size: 16px;
+                line-height: 1.875;
+                color: $grey;
+            }
+
+            &:hover {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+                &::after {
+                    content: 'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.';
+                    display: grid;
+                    place-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 294px;
+                    padding: 24px;
+                    font-size: 18px;
+                    line-height: 1.75;
+                    color: $white;
+                    background: rgba(33, 150, 243, 0.9);
+                    animation: slide .25s cubic-bezier(0.4, 0, 0.2, 1);
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .portfolio {
+        &__btns {
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            &--item {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+
+            &--item a img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .portfolio {
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+    }
+}
