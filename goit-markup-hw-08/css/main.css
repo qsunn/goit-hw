@@ -47,7 +47,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .section {
     padding: 60px 0;
   }
@@ -130,7 +130,7 @@ body {
   margin-right: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .header {
     padding: 21px 0;
   }
@@ -151,7 +151,7 @@ body {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .header {
     padding: 10px 0;
   }
@@ -178,7 +178,7 @@ body {
 
 .mobile-backdrop {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -266,9 +266,13 @@ body {
 }
 .menu__socials--item {
   margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #757575;
 }
 .menu__socials--item:last-child {
   margin-right: 0;
+  padding-right: 0;
+  border-right: none;
 }
 .menu__socials--item a {
   font-weight: 500;
@@ -420,7 +424,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .modal {
     width: 450px;
   }
@@ -428,7 +432,7 @@ body {
     font-size: 12px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 481px) {
   .backdrop {
     padding: 0 15px;
   }
@@ -473,7 +477,7 @@ body {
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .landing__title {
     max-width: 360px;
     font-size: 26px;
@@ -517,7 +521,7 @@ body {
   margin-right: 30px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .about {
     padding-bottom: 60px;
   }
@@ -534,7 +538,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 481px) {
   .about__info {
     grid-template-columns: 1fr;
   }
@@ -595,7 +599,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .team__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -615,7 +619,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 481px) {
   .team__cards {
     grid-template-columns: 1fr;
   }
@@ -649,7 +653,7 @@ body {
   color: #2196F3;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .clients__logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -659,14 +663,10 @@ body {
     margin-right: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .clients__logos {
     grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 480px) {
-  .clients__logos {
-    grid-template-columns: 1fr;
+    overflow-x: hidden;
   }
 }
 .portfolio__btns {
@@ -731,13 +731,11 @@ body {
 }
 .portfolio__cards--item:hover::after {
   content: "Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.";
-  display: grid;
-  place-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 294px;
+  height: 100%;
   padding: 24px;
   font-size: 18px;
   line-height: 1.75;
@@ -746,7 +744,12 @@ body {
   animation: slide 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
+  .adapt {
+    height: 146px;
+  }
+}
+@media (max-width: 769px) {
   .portfolio__btns {
     justify-content: start;
     flex-wrap: wrap;
@@ -756,15 +759,25 @@ body {
     margin-right: 0;
   }
   .portfolio__cards {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
+  }
+  .portfolio__cards .adaptt {
+    height: auto;
+  }
+  .portfolio__cards--item a {
+    width: 100%;
   }
   .portfolio__cards--item a img {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 481px) {
   .portfolio__cards {
     grid-template-columns: 1fr;
+  }
+  .portfolio__cards .adapt {
+    height: auto;
   }
 }
 .footer {
@@ -874,7 +887,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   .footer__flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -902,7 +915,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .footer__flex {
     grid-template-columns: 1fr;
     gap: 60px;
